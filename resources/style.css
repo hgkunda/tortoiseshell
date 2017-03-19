@@ -53,6 +53,10 @@ nav img {
   padding-right: 2rem;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -144,4 +148,68 @@ footer div {
   margin-right: 5%;
   width: 35%;
   margin-bottom: 4rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 200px) {
+  .container {
+    width: 100%;
+    /*margin: 0 auto;*/
+  }
+  /*.flex .container {
+    width: 100%;*/
+  }
+  header {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+    /*padding-top: 0px;*/
+    min-height: 22rem;
+    /*position: absolute;*/
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+  li {
+    padding-top: 0rem;
+  }
+  nav {
+    /*margin-top: 0rem;*/
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  .banner h1 {
+    padding: .75rem 4rem;
+    /*margin-right: 2rem;*/
+  }
+  .banner {
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+  footer {
+    padding: 4rem 0rem;
+  }
+  .supporting {
+    margin: 0rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+  }
+  html {
+    /*align-content: center;*/
+  }
+  .mobile-menu {
+    display: inline;
+  }
+  .services {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 3.77rem;
+  }
+  /*header {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+    padding-top: 0rem;
+  }*/
 }
